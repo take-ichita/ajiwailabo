@@ -1,312 +1,219 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>味わいラボ (AJIWAI LAB) | Official Brand Website</title>
-  <meta name="description" content="Official website of 味わいラボ (AJIWAI LAB), a Japan-based brand. Wholesale & made-to-order. Product lineup examples and inquiry contact." />
-  <meta name="robots" content="index,follow" />
-  <style>
-    :root{
-      --bg:#ffffff;
-      --ink:#111827;     /* slate-900 */
-      --muted:#4b5563;   /* gray-600 */
-      --line:#e5e7eb;    /* gray-200 */
-      --soft:#f9fafb;    /* gray-50 */
-      --card:#ffffff;
-      --accent:#111827;
-      --radius:18px;
-      --shadow: 0 10px 30px rgba(0,0,0,.06);
-      --max: 980px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--ink);
-      background:var(--bg);
-      line-height:1.65;
-    }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:32px 18px 60px}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:10px 0 18px; border-bottom:1px solid var(--line);
-      gap:12px;
-    }
-    .brand{
-      display:flex; flex-direction:column; gap:2px;
-    }
-    .brand strong{font-size:16px; letter-spacing:.02em}
-    .brand span{font-size:12px; color:var(--muted)}
-    .pill{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 12px; border:1px solid var(--line);
-      border-radius:999px; background:var(--soft);
-      font-size:12px; color:var(--muted);
-      white-space:nowrap;
-    }
-    .hero{
-      padding:28px 0 18px;
-      display:grid; grid-template-columns: 1.2fr .8fr; gap:18px;
-    }
-    @media (max-width: 820px){
-      .hero{grid-template-columns:1fr}
-    }
-    .hero h1{
-      margin:0 0 10px;
-      font-size:34px;
-      line-height:1.2;
-      letter-spacing:.01em;
-    }
-    .hero p{margin:0 0 14px; color:var(--muted)}
-    .hero .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      border-radius:999px; padding:10px 14px;
-      border:1px solid var(--ink);
-      text-decoration:none; font-size:13px;
-    }
-    .btn.ghost{border-color:var(--line); color:var(--ink); background:#fff}
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:16px;
-    }
-    .proof{
-      display:grid; grid-template-columns:1fr 1fr; gap:12px;
-      margin-top:8px;
-    }
-    @media (max-width: 820px){
-      .proof{grid-template-columns:1fr}
-    }
-    .proof ul{margin:0; padding-left:18px; color:var(--muted)}
-    .sec{margin-top:22px}
-    .sec h2{
-      margin:0 0 10px;
-      font-size:16px; letter-spacing:.02em;
-    }
-    .note{
-      margin:10px 0 0;
-      padding:10px 12px;
-      border:1px dashed var(--line);
-      border-radius:12px;
-      color:var(--muted);
-      background: #fff;
-      font-size:12px;
-    }
-    .grid{
-      display:grid; grid-template-columns: repeat(3, 1fr); gap:12px;
-    }
-    @media (max-width: 820px){
-      .grid{grid-template-columns:1fr}
-    }
-    .product{
-      display:flex; flex-direction:column; gap:10px;
-    }
-    .thumb{
-      width:100%;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background:linear-gradient(135deg, #f3f4f6, #ffffff);
-      aspect-ratio: 4/3;
-      display:flex; align-items:center; justify-content:center;
-      overflow:hidden;
-      position:relative;
-    }
-    .thumb .label{
-      position:absolute; top:10px; left:10px;
-      background:rgba(255,255,255,.9);
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:6px 10px;
-      font-size:11px; color:var(--muted);
-    }
-    .thumb svg{width:70%; height:70%; opacity:.9}
-    .pTitle{margin:0; font-size:14px}
-    .pMeta{margin:0; font-size:12px; color:var(--muted)}
-    .hr{height:1px; background:var(--line); margin:18px 0}
-    footer{
-      margin-top:28px; padding-top:18px; border-top:1px solid var(--line);
-      color:var(--muted); font-size:12px;
-      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
-    }
-    .smallLinks{display:flex; gap:14px; flex-wrap:wrap}
-    .kicker{font-size:12px; color:var(--muted); letter-spacing:.04em; text-transform:uppercase}
-    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJIWAILABO｜日本の味を、ていねいに。</title>
+<meta name="description" content="AJIWAILABOは、日本の食文化と素材に向き合い、日常に寄り添う食品を開発・提案するブランドです。">
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+               "Hiragino Sans", Meiryo, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header img {
+  max-width: 220px;
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #444;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem 3rem;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  margin: 1rem 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+.product p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.philosophy {
+  background: #fafafa;
+}
+
+.philosophy p {
+  max-width: 820px;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <strong>味わいラボ <span class="mono">(AJIWAI LAB)</span></strong>
-        <span>Official brand website · Japan-based</span>
-      </div>
-      <div class="pill" aria-label="Official status">
-        ✅ Official / Japan-based · Wholesale / Made-to-order
-      </div>
+
+<header>
+  <img src="images/logo.png" alt="AJIWAILABO">
+  <p>日本の味を、ていねいに。日常に、少しの特別を。</p>
+</header>
+
+<section class="hero">
+  <h1>味を研究し、暮らしに届ける。</h1>
+  <p>
+    あじわいラボ（AJIWAILABO）は、日本の食文化や素材に向き合いながら、
+    「日常の中で自然に使いたくなる味」をテーマに食品づくりを行っています。<br><br>
+    奇をてらわず、過剰に飾らず。
+    素材の持つ力や、日本人が長く親しんできた味わいを、
+    現代の食卓に合うかたちで丁寧に再構成しています。
+  </p>
+</section>
+
+<section>
+  <h2>商品ラインナップ</h2>
+
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="images/product1.jpg">
+      <h3>伝統調味・和の味付け</h3>
+      <p>
+        醤油や出汁、発酵の考え方をベースに、日本の食卓で培われてきた
+        味の組み立てを大切にした調味食品です。<br><br>
+        濃すぎず、薄すぎず、料理の邪魔をしないこと。
+        日々の料理に自然と溶け込み、使い続けたくなる
+        バランスを追求しています。
+      </p>
     </div>
 
-    <section class="hero" aria-label="Hero">
-      <div>
-        <div class="kicker">Official Brand</div>
-        <h1>味わいラボ <span class="mono">(AJIWAI LAB)</span></h1>
-        <p>
-          A Japan-based brand. This website is the official brand website for
-          confirming our brand presence and presenting our lineup.
-        </p>
-        <div class="ctaRow">
-          <!-- もし外部リンクを置くなら、ここに1つだけ -->
-          <a class="btn ghost" href="#contact">Wholesale inquiries</a>
-          <!-- Amazon商品があるなら、ここに置く（後でURL差し替え） -->
-          <!-- <a class="btn" href="https://www.amazon.co.jp/dp/XXXXXXXXXX" target="_blank" rel="noopener">Example retail product (Amazon)</a> -->
-        </div>
-
-        <div class="proof">
-          <div class="card">
-            <h2>Proof / Facts</h2>
-            <ul>
-              <li>Based and operated in Japan</li>
-              <li>Official website of <span class="mono">味わいラボ (AJIWAI LAB)</span></li>
-              <li>Wholesale & made-to-order available</li>
-              <li>Pricing, MOQ, and production details are provided upon inquiry</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h2>Trademark (Japan)</h2>
-            <p class="pMeta" style="margin:0">
-              <span class="mono">味わいラボ（AJIWAI LAB）</span> is a registered trademark in Japan.
-              <br />
-              <span class="pMeta">※ Registration number is not displayed on this page.</span>
-            </p>
-            <div class="note">
-              This statement is provided for brand verification purposes.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" aria-label="About summary">
-        <h2>About</h2>
-        <p class="pMeta" style="margin-top:6px">
-          We manage brand operations in Japan and provide products for partners and sellers.
-          This website is designed to be simple, official, and verification-friendly.
-        </p>
-        <div class="hr"></div>
-        <p class="pMeta" style="margin:0">
-          <strong>Business model:</strong> Wholesale / made-to-order<br/>
-          <strong>Availability:</strong> Upon inquiry<br/>
-          <strong>Primary purpose:</strong> Brand verification
-        </p>
-      </div>
-    </section>
-
-    <section class="sec" id="lineup" aria-label="Brand lineup">
-      <h2>Brand Lineup</h2>
-      <p class="pMeta">
-        Below are examples of items in the <span class="mono">味わいラボ (AJIWAI LAB)</span> lineup.
-        Only the item labeled “Current product” is an existing, currently available product.
-        Items labeled “Concept example” are shown for brand lineup reference and are not listed as in-stock.
+    <div class="product">
+      <img src="images/product2.jpg">
+      <h3>プレミアムスナック</h3>
+      <p>
+        食感、香り、後味の余韻までを意識して設計したスナック類。
+        甘さや塩味に頼らず、素材そのものの旨みを引き出すことで、
+        大人が落ち着いて楽しめる味わいに仕上げています。<br><br>
+        自分への小さなご褒美や、贈り物にも使いやすいラインです。
       </p>
+    </div>
 
-      <div class="grid">
-        <!-- Current product (実在) -->
-        <div class="card product">
-          <div class="thumb" role="img" aria-label="Current product image placeholder">
-            <div class="label">Current product (existing)</div>
+    <div class="product">
+      <img src="images/product3.jpg">
+      <h3>地域由来の商品</h3>
+      <p>
+        日本各地の食文化や風土から着想を得た商品群。
+        地域に根付いた味の考え方や、昔ながらの食べ方を参考にしながら、
+        現代の生活にもなじむ形へと再構築しています。<br><br>
+        「土地の個性」を感じられることを大切にしています。
+      </p>
+    </div>
 
-            <!-- ここに実在商品の画像を置く：
-                 例）<img src="assets/product1.jpg" alt="Product name" style="width:100%;height:100%;object-fit:cover;"> -->
-            <svg viewBox="0 0 200 150" aria-hidden="true">
-              <rect x="18" y="18" width="164" height="114" rx="14" fill="white" stroke="#e5e7eb"/>
-              <rect x="40" y="40" width="120" height="18" rx="9" fill="#f3f4f6"/>
-              <rect x="40" y="68" width="90" height="12" rx="6" fill="#f3f4f6"/>
-              <rect x="40" y="88" width="100" height="12" rx="6" fill="#f3f4f6"/>
-              <rect x="40" y="108" width="70" height="12" rx="6" fill="#f3f4f6"/>
-            </svg>
-          </div>
-          <p class="pTitle"><strong>Product 01</strong> (example retail item)</p>
-          <p class="pMeta">Status: Existing product · Wholesale / made-to-order available upon inquiry</p>
-          <!-- Amazonリンクを入れるならここ（文字リンク推奨） -->
-          <!-- <p class="pMeta">Example link: <a href="https://www.amazon.co.jp/dp/XXXXXXXXXX" target="_blank" rel="noopener">Amazon Japan</a></p> -->
-        </div>
+    <div class="product">
+      <img src="images/product4.jpg">
+      <h3>からだを気づかう食品</h3>
+      <p>
+        毎日口にするものだからこそ、原材料や製法に配慮した食品を。
+        余計な要素を増やさず、素材の組み合わせや分量を工夫することで、
+        無理なく続けられる味を目指しています。<br><br>
+        特別な健康食品ではなく、生活に自然に寄り添う存在です。
+      </p>
+    </div>
 
-        <!-- Concept example (非実在でもOK：誤認防止のため明示) -->
-        <div class="card product">
-          <div class="thumb" role="img" aria-label="Concept product image">
-            <div class="label">Concept example</div>
-            <svg viewBox="0 0 200 150" aria-hidden="true">
-              <circle cx="70" cy="78" r="34" fill="white" stroke="#e5e7eb"/>
-              <rect x="108" y="50" width="64" height="56" rx="12" fill="white" stroke="#e5e7eb"/>
-              <rect x="118" y="60" width="44" height="10" rx="5" fill="#f3f4f6"/>
-              <rect x="118" y="78" width="34" height="10" rx="5" fill="#f3f4f6"/>
-              <rect x="118" y="96" width="24" height="10" rx="5" fill="#f3f4f6"/>
-            </svg>
-          </div>
-          <p class="pTitle"><strong>Product 02</strong> (lineup reference)</p>
-          <p class="pMeta">Status: Concept example · Available upon inquiry (made-to-order)</p>
-        </div>
+    <div class="product">
+      <img src="images/product5.jpg">
+      <h3>限定・試作商品</h3>
+      <p>
+        新しい味の可能性を探るために生まれる、数量限定の商品。
+        季節や原料の状態、その時々の発想を反映しながら、
+        試験的に製造されるラインです。<br><br>
+        あじわいラボの「研究室的側面」を感じられる商品群です。
+      </p>
+    </div>
 
-        <!-- Concept example -->
-        <div class="card product">
-          <div class="thumb" role="img" aria-label="Concept product image">
-            <div class="label">Concept example</div>
-            <svg viewBox="0 0 200 150" aria-hidden="true">
-              <rect x="22" y="28" width="156" height="94" rx="16" fill="white" stroke="#e5e7eb"/>
-              <path d="M40 94 C60 70, 80 110, 100 84 C120 60, 140 100, 160 74" fill="none" stroke="#e5e7eb" stroke-width="6" stroke-linecap="round"/>
-              <rect x="40" y="46" width="80" height="12" rx="6" fill="#f3f4f6"/>
-            </svg>
-          </div>
-          <p class="pTitle"><strong>Product 03</strong> (lineup reference)</p>
-          <p class="pMeta">Status: Concept example · MOQ / pricing upon request</p>
-        </div>
-      </div>
+    <div class="product">
+      <img src="images/product6.jpg">
+      <h3>日常の日本の味</h3>
+      <p>
+        特別な日ではなく、いつもの食卓で使われることを前提にした食品。
+        飽きのこない味設計と、扱いやすさを重視しています。<br><br>
+        何気ない一食を、少しだけ心地よくしてくれる存在を目指しています。
+      </p>
+    </div>
 
-      <div class="note">
-        Note: “Concept example” items are shown to present the brand lineup concept and are not displayed as “in stock” items.
-        All wholesale terms (MOQ, pricing, lead time) are shared upon inquiry.
-      </div>
-    </section>
-
-    <section class="sec" id="contact" aria-label="Contact">
-      <h2>Wholesale Inquiries</h2>
-      <div class="card">
-        <p class="pMeta" style="margin-top:0">
-          For wholesale inquiries and quotations, please contact us.<br/>
-          We will provide details such as MOQ, pricing, and production lead time after confirmation.
-        </p>
-
-        <!-- ここはあなたの連絡先に差し替え -->
-        <p class="pMeta" style="margin-bottom:0">
-          Email: <a href="mailto:contact@example.com">contact@example.com</a>
-          <span class="pMeta"> (replace with your official email)</span>
-        </p>
-
-        <!-- フォームを置くならGoogleフォーム等のリンクでもOK（ボタンは控えめ推奨） -->
-        <!-- <p class="pMeta">Inquiry form: <a href="https://forms.gle/xxxx" target="_blank" rel="noopener">Google Form</a></p> -->
-      </div>
-    </section>
-
-    <footer aria-label="Footer">
-      <div>
-        © <span id="yyyy">2026</span> 味わいラボ (AJIWAI LAB). All rights reserved.
-      </div>
-      <div class="smallLinks">
-        <a href="#lineup">Lineup</a>
-        <a href="#contact">Contact</a>
-        <span class="mono">Japan</span>
-      </div>
-    </footer>
   </div>
+</section>
 
-  <script>
-    // 年だけ自動（任意）
-    document.getElementById('yyyy').textContent = String(new Date().getFullYear());
-  </script>
+<section class="philosophy">
+  <h2>AJIWAILABOの考え方</h2>
+  <p>
+    私たちは、「強い味」や「分かりやすい刺激」よりも、
+    積み重ねていく中で良さが伝わる味を大切にしています。<br><br>
+    食は日常に最も近い文化。
+    だからこそ、無理なく、長く、安心して付き合えるものを。
+    あじわいラボは、そんな視点で食品づくりを続けています。
+  </p>
+</section>
+
+<footer>
+  © 2026 AJIWAILABO
+</footer>
+
 </body>
 </html>
